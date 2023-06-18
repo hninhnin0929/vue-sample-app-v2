@@ -2,6 +2,12 @@
     <div>
         
         <h1>Friends Component</h1>
+        <!-- {{ $route.params.id }}
+        {{ $route.params.age }}
+        {{ $route.params.weight }} -->
+        {{ id }}
+        {{ age }}
+        {{ weight }}
         
     </div>
 </template>
@@ -12,6 +18,11 @@
     export default {
 
         name: "Friends", 
+        props: [
+            'id',
+            'age',
+            'weight',
+        ],
         components: {
             
         },      
